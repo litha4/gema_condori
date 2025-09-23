@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+:root{
+    --azul:#0E2D63;
+    --azul_pastel:#658DC0;
+    --celeste:#A1E3F9;
+    --verde_agua:#D1F8EF;
+    --celeste_bajo:#DCE9EF;
+    --claro:#F5F6F8;
+    --naranja:#F3AD6D;
+
+
+    --padding_1:;
+    --padding_2:;
+    --padding_3:;
+
+    --h1:47.78px;
+    --h2:39.81px;
+    --h3:33.18px;
+    --h4:27.65px;
+    --h5:23.04px;
+    --h6:19.20px;
+    --p:16px;
+    --small:13.33px;
+    --xsmall:11.11px;
+
+    --sanserif:"Fahkwang","sans-serif";
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--celeste_bajo);
+    font-family:"Fahkwang","sans-serif";
+}
+
+h1{
+    /* h1 */
+    font-family: Fahkwang;
+    font-size: 47.78px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{}
+.small{}
+.xsmall{}
+.h1_italic{}
+.h1_bold{}
+.p_italic{}
+.p_bold{}
