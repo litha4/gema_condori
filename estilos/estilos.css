@@ -11,9 +11,11 @@
 
 
     --padding_1: 14px;
-    --padding_2:20px;
+    --padding_2:42px;   /*3*padding_1*/
     --padding_3:30px;
-    --gap:30px;
+    --padding_4:56px;   /*4*padding_1*/
+    --padding_5:70;     /*5*padding_1*/
+    --gap:20px;
 
     --h1:47.78px;
     --h2:39.81px;
@@ -27,6 +29,9 @@
 
     --sanserif:"Fahkwang","sans-serif";
 
+    --w:2000px;
+    --h:500px;
+    --degrade_1:linear-gradient(var(--azul),var(--celeste));
 }
 
 *{
@@ -45,9 +50,9 @@ h1{
     /*color: #000;*/
     font-family: var(--sanserif);
     font-size: var(--h1);
-    font-style: normal;
+   
     font-weight: 400;
-    line-height: normal;
+  
     text-transform: uppercase;
 }
 h2{
@@ -174,8 +179,10 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: var(--azul_pastel);
+    /*background-image: url(imagenes/textura2.png);*/
     color:var(--claro) ;
     padding: var(--padding_1);
+    font-size: var(--h4);
 }
 header h1 a{
     color: var(--celeste_bajo);
@@ -183,13 +190,17 @@ header h1 a{
 }
 header nav{}
 header nav ul{
+    height: 300px;
     display:flex;
     list-style: none;
     gap: var(--gap);
+
+
 }
 header nav ul li{}
 
 header nav ul li a{
+    
     color: var(--azul);
     text-decoration: none;
     display: block;
@@ -201,21 +212,137 @@ header nav ul li a:hover{
     color: var(--celeste);
 }
 
+
+/* MODULARIZACIÓN*/
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    border: 1px solid var(--azul-pastel);
+    padding: var(--padding_2);
+}
+
+.espacio_bloques{
+    margin-bottom: var(--padding_2);
+}
+.interno_bloques{
+    padding: var(--padding_2);
+}
+
+img{
+    display: block;
+    background-color: var(--claro);
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    margin-bottom: var(--padding_2);
+}
+.redondeo{
+    border-radius: var(--padding_3);
+}
+
+.ocultar{
+    overflow: hidden;
+
+}
+
+.absoluto{
+    position: absolute;
+
+}
+.relativo{
+    position: relative;
+}
+
+.btn{
+    display: block;
+    font-size: var(--p);
+    text-decoration: none;
+    padding: var(--padding_2) var(--padding_1);
+    background-color: var(--azul);
+    color: var(--claro);
+    border-radius:var(--padding_3);
+    margin: var(--padding_2) auto;
+    text-align: center;
+    max-width: 300px;
+    transition: 300ms all;
+
+}
+.btn:hover{
+    background-color: var(--azul_pastel);
+}
+
+.izquierda{
+    display: block;
+    justify-content: right;
+
+}
+
+
+
+/*FIN DE MODULARIZACIÓN*/
+
 /*hero*/
 .hero{
-    position: relative;
-
     
+
 }
-.hero p{
+.huron{
+    position: relative;
+}
+.huron p{
     width: 400px;
-    padding: var(--padding_1);
+    padding: var(--padding_5);
     background-color: var(--azul_pastel);
     font-size: var(--h5);
     position: absolute;
-    z-index: 9999;
-    left: var(--padding_3);
-    bottom: var(--padding_1);
+    /*z-index: 9999;*/
+
+    left: 1500px;
+    bottom: 0;
+
+}
+.bienvenida{
+    /*width: var(--w);*/
+    /*height: var(--h);*/
+    display: block;
+    width: 800px;
+    background: var(--azul);
+    position: relative;
+    color: var(--claro);
+
+    
+    
+}
+/*.contenido{
+    height: var(--h);
+    display: block;
+    width: 800px;
+    background: var(--celeste);
+    position: relative;
+    right: 0;
+
+}
+*/
+.filosofia{
+    height: var(--h);
+    display: block;
+    background-color: var(--azul_pastel);
+    
+}
+.trabajos{
+    height: var(--h);
+    display: flex;
+    background-color: var(--celeste);
+
 }
 
 /*MAIN*/
@@ -223,6 +350,7 @@ header nav ul li a:hover{
 
 /*FOOTER*/
 footer{
+    height: 200px;
     display:flex;
     justify-content: space-around;
     background-color: var(--azul_pastel);
@@ -233,12 +361,14 @@ footer{
 footer p{
     text-decoration: none;
     color: var(--azul);
+    
  }
 footer nav{}
 footer nav ul{
     display: flex;
     list-style: none;
     gap: var(--gap);
+    justify-content: center;
 }
 footer nav ul li{
     color: var(--celeste);
