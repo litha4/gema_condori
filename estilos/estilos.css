@@ -589,6 +589,7 @@ footer nav ul li a:hover{
     background-color: var(--azul);
     color: var(--claro);
     gap: 30px;
+    box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
     
 }
 .motivacion_texto_titulo{}
@@ -653,6 +654,7 @@ footer nav ul li a:hover{
     background-color: var(--azul);
     color: var(--claro);
     gap: 30px;
+    box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
 }
 .motivacion_universidad_titulo{}
 .motivacion_universidad_masa{}
@@ -789,3 +791,115 @@ footer nav ul li a:hover{
 
 
 /*FIN MAIN SOBRE MI*/
+
+/*inicio mis mascotas*/
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    text-align: center;
+    background-color: var(--azul_pastel);
+    margin: 0px auto;
+    gap: 30px;
+    color: var(--azul);
+    
+}
+.fotos__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.fotos_titulo{
+    margin: 50px;
+}
+.fotos__cards_gatos{
+     display: flex;
+    flex-direction: column;
+    background-color:var(--azul);
+    border: 15px solid var(--celeste);
+    gap:20px;
+    padding: 80px 50px ;
+    border-radius: 50px;
+    margin: 10px;
+    color: var(--claro);
+    box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
+    position: relative;
+
+}
+.fotos__cards_gatos_imagen{
+    width: 200px;
+    height: calc(200px * 0.866);
+    background-color: var(--azul);
+    overflow: hidden;
+    position: relative;
+
+
+    clip-path: polygon(50% 0%, 100% 35%, 100% 75%,50% 100%, 0% 75%, 0% 35%);
+}
+.fotos__cards_gatos_circulo_1{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.fotos__cards_gatos_circulo_2{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+
+.recuerdos_imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    background-color: var(--celeste);
+    gap: 30px;
+    border: 15px solid var(--azul);
+    border-radius: 50px;
+    position: relative;
+    box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
+}
+.recuerdos_imagen_foto_circulo_1{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.recuerdos_imagen_foto_circulo_2{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 440px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+/*fin mascotas*/
