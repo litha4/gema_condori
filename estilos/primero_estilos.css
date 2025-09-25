@@ -1,0 +1,185 @@
+
+/*/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul_pastel);
+    /*background-image: url(imagenes/textura2.png);*/
+    color:var(--claro) ;
+    padding: var(--padding_1);
+    font-size: var(--h4);
+}
+header h1 a{
+    color: var(--celeste_bajo);
+    text-decoration: none;
+}
+header nav{}
+header nav ul{
+    height: 300px;
+    display:flex;
+    list-style: none;
+    gap: var(--gap);
+
+
+}
+header nav ul li{}
+
+header nav ul li a{
+    
+    color: var(--azul);
+    text-decoration: none;
+    display: block;
+    padding: var(--padding_2);
+    border-radius: 50px;
+}
+header nav ul li a:hover{
+    background-color: var(--azul);
+    color: var(--celeste);
+}
+
+
+/* MODULARIZACIÓN*/
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    border: 1px solid var(--azul-pastel);
+    padding: var(--padding_2);
+}
+
+.espacio_bloques{
+    margin-bottom: var(--padding_2);
+}
+.interno_bloques{
+    padding: var(--padding_2);
+}
+
+img{
+    display: block;
+    background-color: var(--claro);
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    margin-bottom: var(--padding_2);
+}
+.redondeo{
+    border-radius: var(--padding_3);
+}
+
+.ocultar{
+    overflow: hidden;
+
+}
+
+.absoluto{
+    position: absolute;
+
+}
+.relativo{
+    position: relative;
+}
+
+.btn{
+    display: block;
+    font-size: var(--p);
+    text-decoration: none;
+    padding: var(--padding_2) var(--padding_1);
+    background-color: var(--azul);
+    color: var(--claro);
+    border-radius:var(--padding_3);
+    margin: var(--padding_2) auto;
+    text-align: center;
+    max-width: 300px;
+    transition: 300ms all;
+
+}
+.btn:hover{
+    background-color: var(--azul_pastel);
+}
+
+.izquierda{
+    display: block;
+    justify-content: right;
+
+}
+
+
+
+/*FIN DE MODULARIZACIÓN*/
+
+/*hero*/
+.hero{
+    
+
+}
+.huron{
+    position: relative;
+}
+.huron p{
+    width: 400px;
+    padding: var(--padding_5);
+    background-color: var(--azul_pastel);
+    font-size: var(--h5);
+    position: absolute;
+    /*z-index: 9999;*/
+
+    left: 1500px;
+    bottom: 0;
+
+}
+.bienvenida{
+    width: var(--w);
+    height: var(--h);
+    display: block;
+    width: 800px;
+    background: var(--azul);
+    position: relative;
+    color: var(--claro);    
+}
+
+.text{
+    display: flex;
+    width: var(--w);
+    height: var(--h);
+    background-color: var(--azul_pastel);
+    position: relative;
+    left: 1000px;
+    bottom: 1000px;
+    
+    
+}
+/*.contenido{
+    flex: 1;
+    height: var(--h);
+    
+    width: 800px;
+    background: var(--celeste);
+   
+
+}*/
+
+
+.filosofia{
+    height: var(--h);
+    display: block;
+    justify-content: space-between;
+    background-color: var(--azul_pastel);
+    
+}
+s
+.cards{
+    height: var(--h);
+    display: flex;
+    background-color: var(--celeste);
+
+}
+
+/*MAIN*/

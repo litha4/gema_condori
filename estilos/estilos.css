@@ -16,6 +16,7 @@
     --padding_4:56px;   /*4*padding_1*/
     --padding_5:70;     /*5*padding_1*/
     --gap:20px;
+    --gap_2:1000px;
 
     --h1:47.78px;
     --h2:39.81px;
@@ -29,8 +30,8 @@
 
     --sanserif:"Fahkwang","sans-serif";
 
-    --w:2000px;
-    --h:500px;
+    --w:1000px;
+    --h:600px;
     --degrade_1:linear-gradient(var(--azul),var(--celeste));
 }
 
@@ -174,215 +175,143 @@ p{
 }
 
 
-/*HEADER*/
-header{
+/*Header*/
+.header{
     display: flex;
-    justify-content: space-between;
+    flex-direction:column;
+    height: 800px;
     background-color: var(--azul_pastel);
-    /*background-image: url(imagenes/textura2.png);*/
-    color:var(--claro) ;
-    padding: var(--padding_1);
-    font-size: var(--h4);
+    
+    
 }
-header h1 a{
-    color: var(--celeste_bajo);
+.header_row{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    
+    /*gap: var(--gap_2);*/
+}
+.mi_logo{}
+.mi_logo_imagen{
+    border: 15px solid var(--azul);
+    border-radius: 30PX;
+    transform: rotate(10deg);
+}
+.logo_1{
+    transform: rotate(10deg);
+    
+}
+.mi_logo_texto{
+    background-color: var(--celeste);
+    padding: 25px 50px;
+    border-radius: 30px;
+    list-style: none;
     text-decoration: none;
+    position: relative;
+
+
+    
 }
-header nav{}
-header nav ul{
-    height: 300px;
-    display:flex;
+.mi_logo_circulo{
+    display: inline-block;
+    position: absolute;
+    top: 400px;
+    left: 65px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
+    
+
+}
+
+.mi_yo_nav{}
+.menu_yo_nav-ul{
+    display: flex;
+    flex-direction: row;
     list-style: none;
     gap: var(--gap);
-
-
-}
-header nav ul li{}
-
-header nav ul li a{
+    margin-top:100px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    margin-right: 50px;
     
-    color: var(--azul);
-    text-decoration: none;
-    display: block;
-    padding: var(--padding_2);
-    border-radius: 50px;
 }
-header nav ul li a:hover{
+.boton_menu{
     background-color: var(--azul);
-    color: var(--celeste);
-}
-
-
-/* MODULARIZACIÓN*/
-
-.fila{
-    display: flex;
-    justify-content: space-between;
-    gap: var(--gap);
-}
-
-.wrap{
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card{
-    border: 1px solid var(--azul-pastel);
-    padding: var(--padding_2);
-}
-
-.espacio_bloques{
-    margin-bottom: var(--padding_2);
-}
-.interno_bloques{
-    padding: var(--padding_2);
-}
-
-img{
-    display: block;
-    background-color: var(--claro);
-    width: 100%;
-    min-width: 300px;
-    min-height: 300px;
-    margin-bottom: var(--padding_2);
-}
-.redondeo{
-    border-radius: var(--padding_3);
-}
-
-.ocultar{
-    overflow: hidden;
-
-}
-
-.absoluto{
-    position: absolute;
-
-}
-.relativo{
-    position: relative;
-}
-
-.btn{
-    display: block;
-    font-size: var(--p);
+    /*padding: var(--padding_2) var(--padding_1); */
+    padding:35px 55px;
+    /*margin:100px auto;*/
     text-decoration: none;
-    padding: var(--padding_2) var(--padding_1);
-    background-color: var(--azul);
-    color: var(--claro);
-    border-radius:var(--padding_3);
-    margin: var(--padding_2) auto;
     text-align: center;
-    max-width: 300px;
-    transition: 300ms all;
-
-}
-.btn:hover{
-    background-color: var(--azul_pastel);
-}
-
-.izquierda{
-    display: block;
-    justify-content: right;
-
-}
-
-
-
-/*FIN DE MODULARIZACIÓN*/
-
-/*hero*/
-.hero{
-    
-
-}
-.huron{
-    position: relative;
-}
-.huron p{
-    width: 400px;
-    padding: var(--padding_5);
-    background-color: var(--azul_pastel);
-    font-size: var(--h5);
-    position: absolute;
-    /*z-index: 9999;*/
-
-    left: 1500px;
-    bottom: 0;
-
-}
-.bienvenida{
-    /*width: var(--w);*/
-    /*height: var(--h);*/
-    display: block;
-    width: 800px;
-    background: var(--azul);
-    position: relative;
+    font-size:var(--h3);
+    border-radius: 50px;
     color: var(--claro);
-
-    
-    
+    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
 }
-/*.contenido{
-    height: var(--h);
-    display: block;
-    width: 800px;
-    background: var(--celeste);
-    position: relative;
-    right: 0;
-
-}
-*/
-.filosofia{
-    height: var(--h);
-    display: block;
-    background-color: var(--azul_pastel);
-    
-}
-.trabajos{
-    height: var(--h);
-    display: flex;
+.boton_menu:hover{
     background-color: var(--celeste);
-
+    color: var(--azul);
 }
+.slogan{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--azul);
+    height: 100%;
+    color: var(--celeste_bajo);
+    /*border-radius: 40px 40px 0 0;*/ /* borde de arriba slogan*/
+    
+}
+
+
+/*FIN HEADER*/
 
 /*MAIN*/
+.hero{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--celeste);
+    justify-content:center;
+    
+    
+    
+}
+.hero_texto_base{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px 0px;
+    background-color: var(--azul);
+    color: var(--celeste_bajo);
+    gap: 20px;
+
+}
+.hero_imagen{
+   width: 1500px;
+    height: auto;
+    /*position: absolute;
+    left: 20px;*/
+
+}
+.bienvenida{}
+.bienvenida_titulo{}
+.bienvenida_imagenes{}
+.bienvenida_texto{}
+.personalidad{}
+.personalidad_cards{}
+.personalidad_cards--yo{}
+.cards{}
+.cards_card{}
+/* FIN MAIN*/
 
 
 /*FOOTER*/
-footer{
-    height: 200px;
-    display:flex;
-    justify-content: space-around;
-    background-color: var(--azul_pastel);
-    color: var(--claro);
-    padding: var(--padding_2);
-    
-}
-footer p{
-    text-decoration: none;
-    color: var(--azul);
-    
- }
-footer nav{}
-footer nav ul{
-    display: flex;
-    list-style: none;
-    gap: var(--gap);
-    justify-content: center;
-}
-footer nav ul li{
-    color: var(--celeste);
-    text-decoration: none;
-    display: block;
-}
-footer nav ul li a{
-    color:var(--celeste);
-    text-decoration: none;
-    padding: var(--padding_2);
-    border-radius: 50px;
-
-}
-footer nav ul li a:hover{
-    background-color: var(--azul);
-    color: var(--claro);
-}
+.footer{}
+.footer_menu{}
+.footer_menu_ul{}
+.footer_menu_ul_boton{}
