@@ -182,8 +182,13 @@ p{
     display: flex;
     flex-direction:column;
     height: 800px;
-    background-color: var(--azul_pastel);
-    
+    background-image: url('../imagenes/cerezas.png');
+    background-repeat: no-repeat;
+    background-position: ceter center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    position: relative;
     
 }
 .header_row{
@@ -194,15 +199,32 @@ p{
     
     /*gap: var(--gap_2);*/
 }
-.mi_logo{}
+/*.efecto_cristal{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: var(--border-radius_1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}*/
+.mi_logo{
+    position: relative;
+    z-index: 2;
+    
+}
 .mi_logo_imagen{
     border: 15px solid var(--azul);
     border-radius: var(--border-radius_1);
     transform: rotate(10deg);
     margin-left: 100px;
+    
 }
 .logo_1{
     transform: rotate(10deg);
+
     
 }
 .mi_logo_texto{
@@ -273,11 +295,28 @@ p{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-color: var(--azul);
+    /*background-color: var(--azul);*/
     height: 100%;
-    color: var(--celeste_bajo);
+    color: var(--azul);
     /*border-radius: 40px 40px 0 0;*/ /* borde de arriba slogan*/
     
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /*border-radius: var(--border-radius_1);*/
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+    position: absolute;
+    top: 480px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 1;
 }
 
 
@@ -415,7 +454,7 @@ p{
     left: 40px;
     width: 25px;
     height: 25px;
-    background-color: var(--azul);
+    background-color: var(--claro);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
@@ -429,7 +468,7 @@ p{
     left: 325px;
     width: 25px;
     height: 25px;
-    background-color: var(--azul);
+    background-color: var(--claro);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
@@ -446,7 +485,7 @@ p{
 .cards{
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: auto;
     margin: 20px auto;
     background-color: var(--azul_pastel);
     text-align: center;
@@ -573,11 +612,11 @@ p{
 .motivacion_imagen_foto_circulo_1{
     display: inline-block;
     position: absolute;
-    top: 70px;
-    left: 90px;
+    top: 80px;
+    left: 65px;
     width: 25px;
     height: 25px;
-    background-color: var(--azul);
+    background-color: var(--celeste_bajo);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -8px 3px 15px 0px rgba(50, 50, 50, 0.7);
@@ -585,11 +624,11 @@ p{
 .motivacion_imagen_foto_circulo_2{
     display: inline-block;
     position: absolute;
-    top: 70px;
-    left: 500px;
+    top: 80px;
+    left: 510px;
     width: 25px;
     height: 25px;
-    background-color: var(--azul);
+    background-color: var(--celeste_bajo);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -8px 3px 15px 0px rgba(50, 50, 50, 0.7);
@@ -638,7 +677,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 150px 0px;
+    margin: 110px 0px;
     background-color: var(--azul);
     color: var(--celeste_bajo);
     gap: 20px;
@@ -679,7 +718,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 20px;
     gap: 30px;
 }
 .habilidades_row_card{
@@ -690,22 +729,26 @@ p{
     gap: 20px;
     padding: 40px 30px;
     border-radius: var(--border-radius_1);
-    margin: 40px 60px 100px 60px;
+    margin: 40px 20px 100px 60px;
     color: var(--azul);
     box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
     position: relative;
 }
 .habilidades_row_card_imagenes{
+    width: 350px;
+    height: 350px;
+    margin-left: 90px;
+    align-items:center;
     border-radius: var(--border-radius_1);
 }
 .habilidades_row_card-circulo_1{
     display: inline-block;
     position: absolute;
     top: 80px;
-    left: 30px;
+    left: 120px;
     width: 35px;
     height: 35px;
-    background-color: var(--azul);
+    background-color: var(--celeste);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
@@ -714,10 +757,10 @@ p{
     display: inline-block;
     position: absolute;
     top: 80px;
-    left: 400px;
+    left: 420px;
     width: 35px;
     height: 35px;
-    background-color: var(--azul);
+    background-color: var(--celeste);
     border-radius: 100px;
     color: var(--azul);
     box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 07);
@@ -809,7 +852,7 @@ p{
     position: relative;
 
 
-    clip-path: polygon(50% 0%, 100% 35%, 100% 75%,50% 100%, 0% 75%, 0% 35%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .fotos__cards_gatos_circulo_1{
     display: inline-block;
@@ -848,6 +891,8 @@ p{
     box-shadow: -8px 3px 15px 0px rgba( 50, 50, 50, 07);
 }
 .recuerdos_imagen{
+    width: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -877,7 +922,7 @@ p{
     display: inline-block;
     position: absolute;
     top: 40px;
-    left: 440px;
+    left: 400px;
     width: 35px;
     height: 35px;
     background-color: var(--claro);
@@ -918,6 +963,8 @@ p{
     
 }
 .destacados_contenido_imagen_foto{
+    width: 420px;
+    height: auto;
     padding: var(--padding_1);
     background-color: var(--azul);
     border-radius: var(--border-radius_1);
@@ -939,10 +986,45 @@ p{
 }
 .destacados_contenido_subtitulo{
     padding: var(--padding_1);
+    /*text-decoration: none;
+    text-align: center;
+    font-size:var(--h6);*/
     margin-top: 20px;
-    background-color: var(--azul_pastel);
+    /*background-color: var(--azul_pastel);
     border-radius: var(--border-radius_1);
-    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 08);
+    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 08);*/
+}
+.boton_destacados_1{
+    background-color: var(--azul);
+    /*padding: var(--padding_2) var(--padding_1); */
+    padding:20px 30px;
+   
+    text-decoration: none;
+    text-align: center;
+    font-size:var(--h6);
+    border-radius: 50px;
+    color: var(--claro);
+    box-shadow: -7px 3px 15px 0px rgba( 50, 50, 50, 07);
+    transition: 300ms all;
+}
+/*.boton_destacados_2{
+    
+   background-color: var(--azul);
+    /*padding: var(--padding_2) var(--padding_1); 
+    padding:20px 30px;
+   
+    text-decoration: none;
+    text-align: center;
+    font-size:var(--h6);
+    border-radius: 50px;
+    color: var(--claro);
+    box-shadow: -7px 3px 15px 0px rgba( 50, 50, 50, 07);
+    transition: 300ms all;
+}*/
+
+.boton_destacados_1:hover{
+    background-color: var(--azul_pastel);
+    color: var(--azul);
 }
 .destacados_contenido__imagen__foto_circulo_1{
     display: inline-block;
@@ -1030,16 +1112,16 @@ p{
     padding: var(--padding_1);
     margin-top: 20px;
     text-align: center;
-    color: var(--celeste);
+   /* color: var(--celeste);
     background-color: var(--azul);
     border-radius: var(--border-radius_1);
-    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 08);
+    box-shadow: -5px 3px 15px 0px rgba( 50, 50, 50, 08);*/
 }
 .animacion_contenido_imagen_circulo_1{
     display: inline-block;
     position: absolute;
     top: 1845px;
-    left: 90px;
+    left: 85px;
     width: 35px;
     height: 35px;
     background-color: var(--claro);
@@ -1051,7 +1133,7 @@ p{
     display: inline-block;
     position: absolute;
     top: 1845px;
-    left: 450px;
+    left: 405px;
     width: 35px;
     height: 35px;
     background-color: var(--claro);
@@ -1151,53 +1233,176 @@ p{
     border-radius: var(--border-radius_1);
     box-shadow: -5px 3px 15px 0px rgba( 120, 120, 120, 08);
 }
-.ilustracion_foto_circulo_1{}
-.ilustracion_foto_circulo_2{}
+.ilustracion_foto_circulo_1{
+    display: inline-block;
+    position: absolute;
+    top: 2660px;
+    left: 1430px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--celeste);
+    border-radius: 100px;
+    
+    box-shadow: -5px 3px 15px 0px rgba( 200, 200, 200, 02);
+}
+.ilustracion_foto_circulo_2{
+    display: inline-block;
+    position: absolute;
+    top: 2660px;
+    left: 1750px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--celeste);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
 
 /*fin seccion 3*/
 /* fin portafolio*/
 
 /*inicio cotactos*/
 
-.face-insta{
+.contactos{
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 1000px;
     margin: 20px auto;
-    background-color: var(--azul_pastel);
+    background-color: var(--celeste);
 }
-.face-insta_redes{
+.contactos_redes{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 80px;
-
-}
-.face-insta_redes_foto{
-    padding: 50px ;
-    background-color: var(--azul);
-    border-radius: var(--border-radius_1);
-}
-.face-insta_redes_foto_imagen{
-    border: 15px solid var(--celeste);
-     border-radius: var(--border-radius_1);
-}
-.face-insta_redes_foto_circulo_1{}
-.face-insta_redes_foto_circulo_2{}
-
-.tiktok{
-    display: flex;
-    flex-direction: row;
-    margin: 20px auto;
-    background-color: var(--azul_pastel);
-   
-}
-.tiktok_imagen{
     
 }
-.tiktok_imagen_redes_foto_imagen{}
-.tiktok_imagen_redes_foto_circulo_1{}
-.tiktok_imagen_redes_foto_circulo_2{}
+
+.contactos_redes_facebook{
+    margin: 30px;
+    padding: var(--padding_2) var(--padding_4) ;
+    background-color: var(--azul_pastel);
+    border-radius: var(--border-radius_1);
+    
+}
+.contactos_redes_facebook_imagen{
+    margin-left: 50px;
+    border: 15px solid var(--azul);
+    border-radius: var(--border-radius_1);
+   
+}
+
+/*.contactos_redes_facebook_circulo_1{}
+.contactos_redes_facebook_circulo_2{}*/
+.contactos_redes_circulo_1{}
+.contactos_redes_circulo_2{}
+.contactos_redes_instagram{
+
+    padding: var(--padding_3);
+    background-color: var(--azul_pastel);
+    border-radius: var(--border-radius_1);
+}
+.contactos_redes_instagram_imagen{
+    
+    margin-left: 30px;
+    border: 15px solid var(--azul);
+    border-radius: var(--border-radius_1);
+    
+    
+}
+
+.contactos_redes_tiktok{
+   
+    margin: 30px;
+    padding: var(--padding_2) var(--padding_4) ;
+    background-color: var(--azul_pastel);
+    border-radius: var(--border-radius_1);
+    
+}
+.contactos_redes_tiktok_imagen{
+    margin-left: 50px;
+    border: 15px solid var(--azul);
+    border-radius: var(--border-radius_1);
+    align-items: center;
+}
+
+
+.contactos_masatexto{
+    color: var(--claro);
+    text-align: center;
+}
+
+.contactos_redes_circulo_ori{
+    display: inline-block;
+    position: absolute;
+    top: 1010px;
+    left: 150px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.contactos_redes_circulo_ori_2{
+    display: inline-block;
+    position: absolute;
+    top: 1010px;
+    left: 465px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.contactos_redes_circulo_1{
+    display: inline-block;
+    position: absolute;
+    top: 970px;
+    left: 745px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.contactos_redes_circulo_2{
+    display: inline-block;
+    position: absolute;
+    top: 970px;
+    left: 1060px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.tiktok_imagen_redes_circulo_1_1{
+    display: inline-block;
+    position: absolute;
+    top: 1010px;
+    left: 1320px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+.tiktok_imagen_redes_circulo_2_2{
+    display: inline-block;
+    position: absolute;
+    top: 1010px;
+    left: 1635px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--claro);
+    border-radius: 100px;
+    color: var(--claro);
+    box-shadow: -5px 3px 15px 0px rgba( 128, 128, 128, 03);
+}
+
 /*fin contactos*/
 
 /*FIN MAIN SOBRE MI*/
